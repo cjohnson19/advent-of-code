@@ -3,7 +3,6 @@
 import Data.Array
 import Data.List
 import qualified Data.Text as T
-import GHC.Integer (integerToInt)
 
 getCratesFromRow :: String -> String
 getCratesFromRow = reverse . fst . until (null . snd) step . ([],)
@@ -57,5 +56,6 @@ getCrates = toArray . map (T.unpack . T.strip . T.pack) . transpose . map getCra
 
 main :: IO ()
 main = do
-  input <- readFile "input/5.txt"
+  input <- readFile "5.txt"
+  print $ part1 input
   print $ part2 input
