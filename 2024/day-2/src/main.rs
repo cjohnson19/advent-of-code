@@ -4,12 +4,6 @@ fn main() {
     println!("Hello, world!");
     println!("{}", part_one());
     println!("{}", part_two());
-    // println!(
-    //     "{:?}",
-    //     choose(&vec![1, 2, 3])
-    //         .map(|v| v.collect::<Vec<_>>())
-    //         .collect::<Vec<_>>()
-    // );
 }
 
 fn part_one() -> String {
